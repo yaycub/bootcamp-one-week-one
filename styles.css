@@ -39,6 +39,7 @@ article{
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
+    text-align: center;
 }
 .pets{
     display: flex;
