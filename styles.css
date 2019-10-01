@@ -57,6 +57,7 @@ button{
 #quiz-answers{
     width: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     visibility: hidden;
