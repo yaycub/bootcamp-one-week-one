@@ -63,3 +63,6 @@ button{
     visibility: hidden;
     font-family: 'Mansalva', cursive;   
 }
+#test-score{
+    color: black;
+}
