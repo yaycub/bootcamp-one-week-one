@@ -6,6 +6,7 @@ myButton.addEventListener('click', () => {
     alert('Welcome to the best quiz ever!');
     const userName = prompt('What is your name?');
     const myConfirmation = confirm('You want to take the best quiz, ok?');
+    if(myConfirmation === false) return;
    
     const userAnswerOne = prompt(userName + ', does Jacob walk a dog named "Howl"?');
     const sanitizedUserAnswerOne = userAnswerOne.toLowerCase().trim();
