@@ -1,0 +1,48 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Vibes', cursive;
+}
+h1, h2{
+    padding: 1px;
+    margin-bottom: 5px;
+}
+h2{
+    margin-top: 5px;
+}
+img{
+    height: 350px;
+    width: auto;
+    border: 2px solid purple;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Mansalva', cursive;
+}
+.pets, .games, .comics{
+    margin: 10px;
+    width: 300px;
+    border: 2px solid purple;
+    border-radius: 5px;
+    padding: 10px;
+}
+button{
+    width: 200px;
+    font-size: 18px;
+    margin: 15px;
+    font-family: 'Vibes', cursive;
+}
+#quiz-answers{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    font-family: 'Mansalva', cursive;   
+}

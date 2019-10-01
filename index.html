@@ -5,12 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Mansalva|Vibes&display=swap" rel="stylesheet">
+
+  <title>About Jacob Harrington</title>
 </head>
 <body>
-  
-
-
-  <script src="app.js"></script>
+  <header>
+    <h1>Jacob Harrington</h1>
+    <h2><em>about me</em></h2>
+    <img src="https://external-preview.redd.it/8cqgdOPllCuJ9sjXT1-XWNe58TJa-QZ_5vRf8m7511U.jpg?auto=webp&s=466b97051842c4fdd38553be07e5b57175754ebd" alt="A picture of Bruce Lee with a beard">
+  </header>
+  <article>
+    <section class="pets">I have 3 pets:
+        <ul>
+          <li>Howl(Dog)</li> 
+          <li>Stella(Cat)</li>
+          <li>Watson(Cat)</li>
+        </ul>
+      </section>
+    <section class="games">
+      I play wayyyy too many Video Games, mostly on PC. I like about every genre of video games, unless it's a sport game.
+    </section> 
+    <section class="comics">
+      I also read comics. I haven't kept up with this currently, but that just means I will have a lot to read soon. My current obsession is "The Wicked + The Divine" by Jamie McKelvie & Kieron Gillen.
+      </section>
+    <button id="action-button">Take My Quiz!</button>
+  </article>
+  <section id="quiz-answers">
+    <ul>
+      <li>Your answer to question #1 was <span id="question-one"></span>.</li>
+      <li>Your answer to question #2 was <span id="question-two"></span>.</li>
+      <li>Your answer to question #3 was <span id="question-three"></span>.</li>
+    </ul>
+  </section>
+  <script type="module" src="app.js"></script>
+  <script type="module" src="functions.js"></script>
 </body>
 </html>

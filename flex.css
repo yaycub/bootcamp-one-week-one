@@ -1,0 +1,36 @@
+body{
+    background-image: url('https://media1.giphy.com/media/3n6xKLLyKNaDe/giphy.gif?cid=790b7611f8c3afc92a145405dd47e045a662f6931a2c33cc&rid=giphy.gif')
+}
+.totem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.totem-baby{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: yellow;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+.mall{
+    display: flex;
+    justify-content: center;
+}
+
+.store{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background: beige;
+    text-align: center;
+    border: 1px solid black;
+}
