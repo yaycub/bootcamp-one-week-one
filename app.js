@@ -4,15 +4,16 @@ const testResults = document.getElementById('quiz-answers');
 
 myButton.addEventListener('click', () => {
     alert('Welcome to the best quiz ever!');
+    const userName = prompt('What is your name?');
     const myConfirmation = confirm('You want to take the best quiz, ok?');
    
-    const userAnswerOne = prompt('Do I walk a dog named "Howl"?');
+    const userAnswerOne = prompt(userName + ', does Jacob walk a dog named "Howl"?');
     const sanitizedUserAnswerOne = userAnswerOne.toLowerCase().trim();
     const answerOne = document.getElementById('question-one');
     const functionAnswerOne = isYes(sanitizedUserAnswerOne);
     answerOne.textContent = sanitizedUserAnswerOne + ' and that is ' + functionAnswerOne;
 
-    const userAnswerTwo = prompt('Do I like video games?');
+    const userAnswerTwo = prompt(userName + ', does Jacob like video games?');
     const sanitizedUserAnswerTwo = userAnswerTwo
         .toLowerCase()
         .trim();
@@ -20,7 +21,7 @@ myButton.addEventListener('click', () => {
     const functionAnswerTwo = isYes(sanitizedUserAnswerTwo);
     answerTwo.textContent = sanitizedUserAnswerTwo + ' and that is ' + functionAnswerTwo;
 
-    const userAnswerThree = prompt('Is Stella a cat?');
+    const userAnswerThree = prompt(userName + ', is Stella a cat?');
     const sanitizedUserAnswerThree = userAnswerThree
         .toLowerCase()
         .trim();
