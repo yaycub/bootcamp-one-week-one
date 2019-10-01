@@ -1,15 +1,15 @@
-import { isCorrect } from './functions.js';
+import { isYes } from './functions.js';
 const myButton = document.getElementById('action-button');
 const testResults = document.getElementById('quiz-answers');
 
 myButton.onclick = () => {
     alert('Welcome to the best quiz ever!');
-    const myConfirmation = confirm('You want to take the best quiz, ok?');
+    const myConfirmation = confirm('You want to take the best quiz, ok?(Your answers will be below once you have finished!)');
    
     const userAnswerOne = prompt('Do I walk a dog named "Howl"?');
     const sanitizedUserAnswerOne = userAnswerOne.toLowerCase().trim();
     const answerOne = document.getElementById('question-one');
-    const functionAnswerOne = isCorrect(sanitizedUserAnswerOne);
+    const functionAnswerOne = isYes(sanitizedUserAnswerOne);
     answerOne.textContent = sanitizedUserAnswerOne + ' and that is ' + functionAnswerOne;
 
     const userAnswerTwo = prompt('Do I like video games?');
@@ -17,7 +17,7 @@ myButton.onclick = () => {
         .toLowerCase()
         .trim();
     const answerTwo = document.getElementById('question-two');
-    const functionAnswerTwo = isCorrect(sanitizedUserAnswerTwo);
+    const functionAnswerTwo = isYes(sanitizedUserAnswerTwo);
     answerTwo.textContent = sanitizedUserAnswerTwo + ' and that is ' + functionAnswerTwo;
 
     const userAnswerThree = prompt('Is Stella a cat?');
@@ -25,12 +25,12 @@ myButton.onclick = () => {
         .toLowerCase()
         .trim();
     const answerThree = document.getElementById('question-three');
-    const functionAnswerThree = isCorrect(sanitizedUserAnswerThree);
+    const functionAnswerThree = isYes(sanitizedUserAnswerThree);
     answerThree.textContent = sanitizedUserAnswerThree + ' and that is ' + functionAnswerThree;
 
-    isCorrect(sanitizedUserAnswerOne);
-    isCorrect(sanitizedUserAnswerTwo);
-    isCorrect(sanitizedUserAnswerThree);
+    isYes(sanitizedUserAnswerOne);
+    isYes(sanitizedUserAnswerTwo);
+    isYes(sanitizedUserAnswerThree);
 
     document.getElementById('quiz-answers').style.cssText = 'visibility:visible';
     
