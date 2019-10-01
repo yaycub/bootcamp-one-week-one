@@ -4,11 +4,13 @@ const testResults = document.getElementById('quiz-answers');
 let testScore = 0;
 
 myButton.addEventListener('click', () => {
+    // Beginning of quiz alerts
     alert('Welcome to the best quiz ever!');
     const userName = prompt('What is your name?');
     const myConfirmation = confirm('You want to take the best quiz, ok?');
     if(myConfirmation === false) return;
    
+    // question one 
     const userAnswerOne = prompt(userName + ', does Jacob walk a dog named "Howl"?');
     const sanitizedUserAnswerOne = userAnswerOne
         .toLowerCase()
@@ -18,6 +20,7 @@ myButton.addEventListener('click', () => {
     answerOne.textContent = sanitizedUserAnswerOne + ' and that is ' + functionAnswerOne;
     if(sanitizedUserAnswerOne === 'yes') testScore ++;
 
+    // question two
     const userAnswerTwo = prompt(userName + ', does Jacob like video games?');
     const sanitizedUserAnswerTwo = userAnswerTwo
         .toLowerCase()
@@ -27,6 +30,7 @@ myButton.addEventListener('click', () => {
     answerTwo.textContent = sanitizedUserAnswerTwo + ' and that is ' + functionAnswerTwo;
     if(sanitizedUserAnswerTwo === 'yes') testScore ++;
 
+    // question three
     const userAnswerThree = prompt(userName + ', is Stella a cat?');
     const sanitizedUserAnswerThree = userAnswerThree
         .toLowerCase()
@@ -36,12 +40,14 @@ myButton.addEventListener('click', () => {
     answerThree.textContent = sanitizedUserAnswerThree + ' and that is ' + functionAnswerThree;
     if(sanitizedUserAnswerThree === 'yes') testScore ++;
     
+    // test percentage
     const testPercent = document.getElementById('test-score');
     const uniqueTestScore = Math.floor((testScore / 3) * 100);
     testPercent.textContent = uniqueTestScore;
 
     alert('Your test results will display below the "Take My Quiz" button!')
 
+    // test percentage css manipulation
     if(testScore === 3) {
         document.getElementById('test-score').style.cssText = 'color:green';
     } else { 
@@ -52,6 +58,7 @@ myButton.addEventListener('click', () => {
     isYes(sanitizedUserAnswerTwo);
     isYes(sanitizedUserAnswerThree);
 
+    // makes quiz results visible
     document.getElementById('quiz-answers').style.cssText = 'visibility:visible';
     
 });
