@@ -10,7 +10,9 @@ myButton.addEventListener('click', () => {
     if(myConfirmation === false) return;
    
     const userAnswerOne = prompt(userName + ', does Jacob walk a dog named "Howl"?');
-    const sanitizedUserAnswerOne = userAnswerOne.toLowerCase().trim();
+    const sanitizedUserAnswerOne = userAnswerOne
+        .toLowerCase()
+        .trim();
     const answerOne = document.getElementById('question-one');
     const functionAnswerOne = isYes(sanitizedUserAnswerOne);
     answerOne.textContent = sanitizedUserAnswerOne + ' and that is ' + functionAnswerOne;
