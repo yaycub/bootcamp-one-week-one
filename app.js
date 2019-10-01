@@ -2,9 +2,9 @@ import { isYes } from './functions.js';
 const myButton = document.getElementById('action-button');
 const testResults = document.getElementById('quiz-answers');
 
-myButton.onclick = () => {
+myButton.addEventListener('click', () => {
     alert('Welcome to the best quiz ever!');
-    const myConfirmation = confirm('You want to take the best quiz, ok?(Your answers will be below once you have finished!)');
+    const myConfirmation = confirm('You want to take the best quiz, ok?');
    
     const userAnswerOne = prompt('Do I walk a dog named "Howl"?');
     const sanitizedUserAnswerOne = userAnswerOne.toLowerCase().trim();
@@ -28,13 +28,15 @@ myButton.onclick = () => {
     const functionAnswerThree = isYes(sanitizedUserAnswerThree);
     answerThree.textContent = sanitizedUserAnswerThree + ' and that is ' + functionAnswerThree;
 
+    alert('Your test results will display below the "Take My Quiz" button!')
+
     isYes(sanitizedUserAnswerOne);
     isYes(sanitizedUserAnswerTwo);
     isYes(sanitizedUserAnswerThree);
 
     document.getElementById('quiz-answers').style.cssText = 'visibility:visible';
     
-};
+});
 
 
 
