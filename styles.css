@@ -1,0 +1,68 @@
+*{
+    background-color: bisque;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Vibes', cursive;
+}
+h1, h2{
+    color: darkslategray;
+    padding: 1px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    line-height: 20px;
+}
+h2{
+    margin-top: 5px;
+    color: darkred;
+}
+img{
+    height: 350px;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Mansalva', cursive;
+    font-size: 15px;
+}
+.pets, .games, .comics{
+    margin: 10px;
+    width: 240px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.pets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: auto;
+    font-size: 18px;
+    margin: 5px;
+    font-family: 'Vibes', cursive;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#quiz-answers{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    font-family: 'Mansalva', cursive;   
+}
+#test-score{
+    color: black;
+}
